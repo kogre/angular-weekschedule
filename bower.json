@@ -1,0 +1,31 @@
+{
+  "name": "angular-weekschedule",
+  "version": "0.0.1",
+  "authors": [
+    "koen.gremmelprez@gmail.com"
+  ],
+  "description": "Angular directive to graphically toggle on/off within a week. Useful for opening hours.",
+  "main": ["angular-weekschedule.js", "angular-weekschedule.css"],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "week",
+    "opening",
+    "hours",
+    "schedule",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "snap.svg": "~0.3.0",
+    "underscore": ">=1.7"
+  }
+}

@@ -1,0 +1,11 @@
+
+rect.weekscheduleblock{
+  fill: #CCC;
+  stroke: #ffffff;
+  stroke-width: 1;
+  transition: all 0.1s;
+}
+
+rect.weekscheduleblock.toggled{
+  fill: #666666;
+}
