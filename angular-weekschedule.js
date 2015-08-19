@@ -118,6 +118,8 @@ angular.module('angular-weekschedule', [])
         };
 
         var updateToggleMap = function(availabilityBlocks){
+          initToggleMap();
+
           _.each(availabilityBlocks, function(ab){
             var startBlock= Math.floor(ab.start_at_s/secondsPerBlock);
             var durationBlocks = ab.duration/secondsPerBlock;
@@ -176,7 +178,7 @@ angular.module('angular-weekschedule', [])
             if (previousToggled && !toggleMap[i]){
               availabilityBlocks.push({
                 start_at_s: toggleStreakStart*secondsPerBlock,
-                duration: (i-toggleStreakStart)*secondsPerBlock-1
+                duration: (i-toggleStreakStart)*secondsPerBlock
               });
             }
 
@@ -190,7 +192,7 @@ angular.module('angular-weekschedule', [])
           if(previousToggled){
             availabilityBlocks.push({
                 start_at_s: toggleStreakStart*secondsPerBlock,
-                duration: (7*24*blocksPerHour-toggleStreakStart)*secondsPerBlock-1
+                duration: (7*24*blocksPerHour-toggleStreakStart)*secondsPerBlock
               });
           }
 
