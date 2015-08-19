@@ -201,7 +201,7 @@ angular.module('angular-weekschedule', [])
 
         calculateGlobals(scope);
 
-        scope.$watch('availabilityBlocks', function(newValue){
+        scope.$watchCollection('availabilityBlocks', function(newValue){
           if (newValue !== undefined){
             updateToggleMap(newValue);
             drawGridUpdate();
